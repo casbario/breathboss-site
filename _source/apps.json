@@ -18,9 +18,30 @@
         "Choose a hero in Craving Wars or challenge another player to a best-of-five battle."
       ]
     ],
-    "caption": "Health milestones in BreathBoss",
-    "screen": "The BreathBoss Health Stats screen with milestone and challenge cards.",
-    "support": "Get help with quit settings, account access, or community safety."
+    "support": "Get help with quit settings, account access, or community safety.",
+    "previews": [
+      {
+        "asset": "assets/previews/breathboss-health-ae2018c5.jpg",
+        "thumb": "assets/previews/breathboss-health-ae2018c5-thumb.jpg",
+        "label": "Health milestones",
+        "alt": "Milestone and challenge cards on the BreathBoss Health Stats screen.",
+        "note": "Sample data"
+      },
+      {
+        "asset": "assets/previews/breathboss-battle-7187a02a.jpg",
+        "thumb": "assets/previews/breathboss-battle-7187a02a-thumb.jpg",
+        "label": "Craving Wars",
+        "alt": "The Neon Archer and other hero choices on the Craving Wars screen.",
+        "note": "Sample data"
+      },
+      {
+        "asset": "assets/previews/breathboss-support-c01289be.jpg",
+        "thumb": "assets/previews/breathboss-support-c01289be-thumb.jpg",
+        "label": "SOS & Campfire",
+        "alt": "The SOS and Campfire entrances above the community quote panel.",
+        "note": "Sample data"
+      }
+    ]
   },
   "soberboss": {
     "name": "SoberBoss",
@@ -41,8 +62,6 @@
         "Join community conversations, ask for one-to-one support, or play a friendly battle."
       ]
     ],
-    "caption": "Tide Observatory preview",
-    "screen": "SoberBoss recovery milestones in a blue and gold underwater observatory.",
     "support": "Get help with recovery settings, community features, or your account.",
     "faq": [
       [
@@ -76,6 +95,29 @@
         "Account and data removal",
         "Use Home, Recovery Settings, then Delete Account. The deletion workflow removes account data and can anonymize earlier shared content. Some safety records and content involving other participants may remain."
       ]
+    ],
+    "previews": [
+      {
+        "asset": "assets/previews/soberboss-health-ef1d9630.jpg",
+        "thumb": "assets/previews/soberboss-health-ef1d9630-thumb.jpg",
+        "label": "Tide Observatory",
+        "alt": "Recovery milestone cards in the Tide Observatory.",
+        "note": "Sample data"
+      },
+      {
+        "asset": "assets/previews/soberboss-battle-8f9ad690.jpg",
+        "thumb": "assets/previews/soberboss-battle-8f9ad690-thumb.jpg",
+        "label": "Craving Wars",
+        "alt": "SoberBoss hero selection in the City of Tides.",
+        "note": "Sample data"
+      },
+      {
+        "asset": "assets/previews/soberboss-signal-da21ec08.jpg",
+        "thumb": "assets/previews/soberboss-signal-da21ec08-thumb.jpg",
+        "label": "Signal Station",
+        "alt": "The Request SOS and Harbor Hall entrances at the Signal Station.",
+        "note": "Sample data"
+      }
     ]
   },
   "resistboss": {
@@ -97,8 +139,6 @@
         "Visit the Constellation Observatory for challenges, or choose a hero for a solo game."
       ]
     ],
-    "caption": "Constellation Observatory preview",
-    "screen": "The ResistBoss Constellation Observatory with challenge cards beneath a celestial canopy.",
     "support": "Get help with your goals, journal, or account. You can describe a technical issue without sending journal entries.",
     "faq": [
       [
@@ -132,6 +172,29 @@
         "Removing data",
         "Account deletion can remove or anonymize account-linked records, including shared activity. A device-only journal is removed from that device when you delete the app and its data. Contact support for help with either mode."
       ]
+    ],
+    "previews": [
+      {
+        "asset": "assets/previews/resistboss-welcome-3b8f3105.jpg",
+        "thumb": "assets/previews/resistboss-welcome-3b8f3105-thumb.jpg",
+        "label": "The Astral Ring",
+        "alt": "The ResistBoss welcome screen with the entrance to the Astral Ring.",
+        "note": ""
+      },
+      {
+        "asset": "assets/previews/resistboss-goals-ba0d2b23.jpg",
+        "thumb": "assets/previews/resistboss-goals-ba0d2b23-thumb.jpg",
+        "label": "Private goals",
+        "alt": "The blank goal setup screen with both habit switches off.",
+        "note": ""
+      },
+      {
+        "asset": "assets/previews/resistboss-starforge-a5a227ab.jpg",
+        "thumb": "assets/previews/resistboss-starforge-a5a227ab-thumb.jpg",
+        "label": "Starforge artwork",
+        "alt": "The blue-lit Starforge illustration used as the backdrop for the ResistBoss battle screen.",
+        "note": "In-app artwork"
+      }
     ]
   },
   "carbboss": {
@@ -153,8 +216,6 @@
         "View recorded weight and macro trends, and correct an entry for an earlier date."
       ]
     ],
-    "caption": "CarbBoss trend chart with sample entries",
-    "screen": "CarbBoss daily macro totals and a weight trend chart showing sample data.",
     "support": "Get help with macro targets, weight history, entries, or charts.",
     "faq": [
       [
@@ -184,6 +245,29 @@
         "Editing and removing entries",
         "Use the history editor to correct daily records. Deleting the app and its data removes its local records from that device. Existing device backups are managed separately through Apple."
       ]
+    ],
+    "previews": [
+      {
+        "asset": "assets/previews/carbboss-today-416ff875.jpg",
+        "thumb": "assets/previews/carbboss-today-416ff875-thumb.jpg",
+        "label": "Today",
+        "alt": "Daily macro totals and the most recent weigh-in, populated with sample entries.",
+        "note": "Sample data"
+      },
+      {
+        "asset": "assets/previews/carbboss-progress-0b035547.jpg",
+        "thumb": "assets/previews/carbboss-progress-0b035547-thumb.jpg",
+        "label": "Progress",
+        "alt": "Sample weight and nutrition charts in CarbBoss, with the weight trend first.",
+        "note": "Sample data"
+      },
+      {
+        "asset": "assets/previews/carbboss-history-196ab2ce.jpg",
+        "thumb": "assets/previews/carbboss-history-196ab2ce-thumb.jpg",
+        "label": "Edit history",
+        "alt": "The calendar and daily totals used to edit an earlier entry.",
+        "note": "Sample data"
+      }
     ]
   },
   "live-alpharetta": {
@@ -205,8 +289,6 @@
         "Approved businesses can publish a special, event, or photo and set when it stops appearing."
       ]
     ],
-    "caption": "Places preview with a sample listing",
-    "screen": "The Live Alpharetta Places directory with category filters and a sample café listing.",
     "support": "Get help with sign-in, business applications, listings, check-ins, or reporting a post.",
     "faq": [
       [
@@ -240,6 +322,29 @@
         "Storage, expiry, and requests",
         "Cloud Firestore stores profiles, applications, check-ins, posts, and submitted post photos. An expired check-in or post can disappear from view while its record remains in Firestore. Email support to request access, correction, or deletion."
       ]
+    ],
+    "previews": [
+      {
+        "asset": "assets/previews/live-alpharetta-live-d1a026c8.jpg",
+        "thumb": "assets/previews/live-alpharetta-live-d1a026c8-thumb.jpg",
+        "label": "Live feed",
+        "alt": "The Live feed with an update from a fictional community venue.",
+        "note": "Sample data"
+      },
+      {
+        "asset": "assets/previews/live-alpharetta-places-0b9f86d6.jpg",
+        "thumb": "assets/previews/live-alpharetta-places-0b9f86d6-thumb.jpg",
+        "label": "Places",
+        "alt": "The local directory showing three fictional venues and category filters.",
+        "note": "Sample data"
+      },
+      {
+        "asset": "assets/previews/live-alpharetta-detail-ec970585.jpg",
+        "thumb": "assets/previews/live-alpharetta-detail-ec970585-thumb.jpg",
+        "label": "Place details",
+        "alt": "Garden Hall’s sample place page and its courtyard event.",
+        "note": "Sample data"
+      }
     ]
   }
 }

@@ -2,6 +2,7 @@ for (const gallery of document.querySelectorAll('[data-gallery]')) {
   const image = gallery.querySelector('[data-main]');
   const full = gallery.querySelector('[data-full]');
   const caption = gallery.querySelector('[data-caption]');
+  const note = gallery.querySelector('[data-note-line]');
   const choices = gallery.querySelectorAll('[data-preview]');
 
   for (const choice of choices) {
@@ -14,6 +15,7 @@ for (const gallery of document.querySelectorAll('[data-gallery]')) {
       image.src = choice.href;
       full.href = choice.href;
       caption.textContent = choice.dataset.label;
+      note.textContent = choice.dataset.note;
     });
   }
 }

@@ -82,6 +82,7 @@ header {background:#fff}
 .gallery figcaption {display:grid;gap:.1em;justify-items:center;margin-top:.7rem;line-height:1.35}
 .gallery figcaption strong {font-size:.93rem;color:var(--ink)}
 .gallery figcaption small {font-size:.76rem}
+.gallery figcaption small:empty {display:none}
 .preview-choices {list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:.42rem}
 .preview-choices a {border:1px solid #28202e42;border-radius:.65rem;text-decoration:none;background:#ffffffba;display:flex;align-items:center;justify-content:center;gap:.45rem;padding:.42rem .36rem;height:100%}
 .preview-choices a:hover,.preview-choices a[aria-current] {border-color:var(--accent);background:white}

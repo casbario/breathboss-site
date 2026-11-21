@@ -101,9 +101,7 @@ def home():
 
 def gallery(page, slug, app):
     # Each entry describes a reviewed, public image.
-    previews = app.get("previews") or [{
-        "asset": f"assets/{slug}-screen.jpg", "label": app["caption"], "alt": app["screen"]
-    }]
+    previews = app["previews"]
     first = previews[0]
     first_url = url(page, first["asset"])
     controls = []
@@ -111,14 +109,15 @@ def gallery(page, slug, app):
         image_url = url(page, item["asset"])
         label = escape(item["label"], quote=True)
         alt = escape(item["alt"], quote=True)
-        thumb = url(page, item.get("thumb", item["asset"]))
+        thumb = url(page, item["thumb"])
+        note = escape(item["note"], quote=True)
         selected = ' aria-current="true"' if index == 0 else ""
         controls.append(f'<li><a {selected} href="{image_url}" data-preview data-alt="{alt}" '
-                        f'data-label="{label}"><img width="58" height="72" loading="lazy" '
+                        f'data-label="{label}" data-note="{note}"><img width="58" height="72" loading="lazy" '
                         f'src="{thumb}" alt=""><span>{label}</span></a></li>')
     nav = ('<nav aria-label="App previews"><ul class="preview-choices">' + "".join(controls) + '</ul></nav>'
            if len(previews) > 1 else "")
-    note = '<small>Sample data</small>' if app.get("sampleGallery") else ""
+    note = f'<small data-note-line>{escape(first["note"])}</small>'
     return (f'<div class="gallery" data-gallery><figure><a data-full href="{first_url}" '
             'aria-label="Open full-size preview"><img data-main fetchpriority="high" '
             f'src="{first_url}" alt="{escape(first["alt"], quote=True)}"></a>'
