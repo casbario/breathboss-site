@@ -35,8 +35,6 @@ def email(name, text, kind="Support", classes=""):
 
 
 def icon(page, slug):
-    if slug == "live-alpharetta":
-        return '<span aria-hidden="true" class="icon alpha">AL<span>LIVE</span></span>'
     return f'<img class="icon" src="{url(page, "assets/"+slug+"-icon.jpg")}" width="64" height="64" alt="">'
 
 
@@ -90,13 +88,13 @@ def home():
     page = "index.html"
     hero = f"""<section class="hero"><img class="hero-art" src="{url(page,'assets/astral-ring.jpg')}" alt="" fetchpriority="high">
 <div class="hero-copy"><h1>The app<br>collection<span>.</span></h1>
-<p>Five iPhone apps from Rhino Builds for changing habits, tracking nutrition, and exploring Alpharetta.</p><a class="button light" href="#apps">Explore the apps</a></div>
+<p>Four iPhone apps from Rhino Builds for changing habits and tracking nutrition.</p><a class="button light" href="#apps">Explore the apps</a></div>
 <a class="art-credit" href="{url(page,route('resistboss'))}">ResistBoss <span>/</span> The Astral Ring</a></section>"""
-    write(page,"The app collection","Explore the five iPhone apps from Rhino Builds and find app-specific support and privacy information.",
+    write(page,"The app collection","Explore the four iPhone apps from Rhino Builds and find app-specific support and privacy information.",
           hero + '<section class="collection" id="apps"><h2>Browse the apps</h2>'+directory(page)+'</section>')
     page = "support/index.html"
     body = '<div class="directory-title"><p class="category">Rhino Builds</p><h1>App support</h1><p class="lead">Choose your app to find answers and email the support team.</p></div>'
-    write(page, "App support", "Contact Rhino Builds for help with any of our five apps.", body+directory(page,True),hub=True)
+    write(page, "App support", "Contact Rhino Builds for help with any of our four apps.", body+directory(page,True),hub=True)
 
 
 def gallery(page, slug, app):

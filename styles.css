@@ -53,12 +53,10 @@ header {background:#fff}
 .art-credit span {color:#d8b8ea;margin:0 .25rem}
 .collection,.features {margin:clamp(2rem,4.5vw,4.2rem) 0 0}
 .collection>h2,.features>h2 {margin-bottom:1.25rem}
-.cards {display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.8rem}
+.cards {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
 .card {border:1px solid var(--line);border-top:3px solid var(--accent);background:white;padding:clamp(.9rem,1.35vw,1.4rem);border-radius:.9rem;text-decoration:none;transition:transform .15s,border-color .15s}
 .card:hover {transform:translateY(-3px);border-color:var(--accent);text-decoration:none}
 .icon {display:flex;width:3.65rem;height:3.65rem;border-radius:24%;object-fit:cover;box-shadow:0 0 0 1px #1e18261a;flex-shrink:0}
-.alpha {color:white;background:linear-gradient(145deg,#681d49,#aa2549 60%,#cc353c);align-items:center;justify-content:center;flex-direction:column;line-height:1;font:700 1.65rem/1 Georgia,serif;letter-spacing:-.08em}
-.alpha>span {font:700 .62rem/1.2 -apple-system,sans-serif;letter-spacing:.2em}
 .category {display:block;color:var(--muted);font-size:.86rem;font-weight:630;letter-spacing:.01em}
 .card .category {margin:1.05rem 0 .36rem}
 .card h3 {font-size:clamp(1.15rem,1.55vw,1.48rem)}
@@ -67,7 +65,6 @@ header {background:#fff}
 .soberboss {--accent:#8e6922;--wash:#eee9de}
 .resistboss {--accent:#7355ae;--wash:#eae5f4}
 .carbboss {--accent:#34659b;--wash:#e2ebf5}
-.live-alpharetta {--accent:#982c50;--wash:#f5e4e9}
 .product {margin-top:2rem;display:grid;grid-template-columns:1.1fr 1fr;border:1px solid var(--line);border-radius:1.25rem;overflow:hidden;background:white}
 .product-copy {align-self:center;padding:clamp(1.5rem,4.5vw,4.6rem)}
 .product-copy .icon {width:4rem;height:4rem;margin-bottom:1.5rem}
