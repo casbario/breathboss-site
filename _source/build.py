@@ -51,13 +51,17 @@ def write(page, title, description, content, selected=None, hub=False):
                    if s != selected or page == s+"/index.html" else
                    f'<a class="tab selected" href="{url(page,route(s))}">{a["name"]}</a>'
                    for s,a in APPS.items())
-    brand = f'<a class="brand" href="{url(page, "./")}"><span class="brandmark" aria-hidden="true">rb<span>.</span></span>Rhino Builds</a>'
+    brand = (f'<a class="brand" aria-label="RhinoBuilds! home" href="{url(page, "./")}">'
+             f'<img class="brand-emblem" src="{url(page,"assets/rhino-mark.png")}" width="64" height="56" alt="">'
+             '<span class="wordmark"><b>Rhino</b>Builds<i>!</i></span></a>')
+    gallery_script = (f'<script src="{url(page, "gallery.js")}" defer></script>'
+                      if selected and page == selected+"/index.html" else "")
     app_link = link(page, "./", "Apps", "global-link", page=="index.html")
     help_link = link(page, "support/", "Support", "global-link", hub)
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{escape(title)} · Rhino Builds</title><meta name="description" content="{escape(description, quote=True)}">
-<meta name="color-scheme" content="light"><link rel="stylesheet" href="{url(page, 'styles.css')}"></head>
+<meta name="color-scheme" content="light"><link rel="stylesheet" href="{url(page, 'styles.css')}">{gallery_script}</head>
 <body class="{selected or 'studio'}"><a href="#main" class="skip">Skip to content</a>
 <header><div class="wrap mast">{brand}<nav class="global" aria-label="Site navigation">{app_link}{help_link}</nav></div>
 <nav class="tabbar" aria-label="App collection"><div class="wrap tabs">{tabs}</div></nav></header>
@@ -95,16 +99,42 @@ def home():
     write(page, "App support", "Contact Rhino Builds for help with any of our five apps.", body+directory(page,True),hub=True)
 
 
+def gallery(page, slug, app):
+    # Each entry describes a reviewed, public image.
+    previews = app.get("previews") or [{
+        "asset": f"assets/{slug}-screen.jpg", "label": app["caption"], "alt": app["screen"]
+    }]
+    first = previews[0]
+    first_url = url(page, first["asset"])
+    controls = []
+    for index, item in enumerate(previews):
+        image_url = url(page, item["asset"])
+        label = escape(item["label"], quote=True)
+        alt = escape(item["alt"], quote=True)
+        thumb = url(page, item.get("thumb", item["asset"]))
+        selected = ' aria-current="true"' if index == 0 else ""
+        controls.append(f'<li><a {selected} href="{image_url}" data-preview data-alt="{alt}" '
+                        f'data-label="{label}"><img width="58" height="72" loading="lazy" '
+                        f'src="{thumb}" alt=""><span>{label}</span></a></li>')
+    nav = ('<nav aria-label="App previews"><ul class="preview-choices">' + "".join(controls) + '</ul></nav>'
+           if len(previews) > 1 else "")
+    note = '<small>Sample data</small>' if app.get("sampleGallery") else ""
+    return (f'<div class="gallery" data-gallery><figure><a data-full href="{first_url}" '
+            'aria-label="Open full-size preview"><img data-main fetchpriority="high" '
+            f'src="{first_url}" alt="{escape(first["alt"], quote=True)}"></a>'
+            f'<figcaption><strong data-caption aria-live="polite">{escape(first["label"])}</strong>'
+            f'{note}</figcaption></figure>{nav}</div>')
+
+
 def app_pages(slug, app):
     name = app["name"]
     overview = slug+"/index.html"
     go_support = link(overview,route(slug,"support"),"Get support","button dark")
     go_privacy = link(overview,route(slug,"privacy"),"Privacy policy","button plain")
-    screen = url(overview, "assets/"+slug+"-screen.jpg")
     details = "".join(f'<section><h3>{escape(t)}</h3><p>{escape(c)}</p></section>' for t,c in app["features"])
     body = f"""<section class="product"><div class="product-copy">{icon(overview,slug)}<p class="category">{escape(app["category"])}</p>
 <h1>{name}</h1><p class="lead">{escape(app["intro"])}</p><div class="actions">{go_support}{go_privacy}</div></div>
-<figure class="screen"><img src="{screen}" alt="{escape(app['screen'])}" fetchpriority="high"><figcaption>{escape(app["caption"])}</figcaption></figure></section>
+{gallery(overview,slug,app)}</section>
 <section class="features"><h2>Inside {name}</h2><div>{details}</div></section>"""
     write(overview, name, app["summary"], body, slug)
     for tab in ["support","privacy"]:
