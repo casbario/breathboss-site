@@ -1,0 +1,245 @@
+{
+  "breathboss": {
+    "name": "BreathBoss",
+    "category": "Smoking & vaping",
+    "summary": "Track your quit streak and find company when a craving hits.",
+    "intro": "See the time and money you’ve reclaimed since quitting smoking or vaping. Meet others at the Campfire, or turn a craving into a round of Craving Wars.",
+    "features": [
+      [
+        "Follow your progress",
+        "Your quit date and usual spending turn into a streak, a savings estimate, and health milestones."
+      ],
+      [
+        "Find someone to talk to",
+        "Join the daily Campfire or use SOS for a short, one-to-one conversation under your alias."
+      ],
+      [
+        "Play through a craving",
+        "Choose a hero in Craving Wars or challenge another player to a best-of-five battle."
+      ]
+    ],
+    "caption": "Health milestones in BreathBoss",
+    "screen": "The BreathBoss Health Stats screen with milestone and challenge cards.",
+    "support": "Get help with quit settings, account access, or community safety."
+  },
+  "soberboss": {
+    "name": "SoberBoss",
+    "category": "Alcohol recovery",
+    "summary": "Build a sobriety streak in the ocean world of the City of Tides.",
+    "intro": "Give each sober day a place on the map. Track your streak, explore the Tide Observatory, and reach out to people working toward sobriety.",
+    "features": [
+      [
+        "Set a starting point",
+        "Record your recovery date and what you used to spend on alcohol."
+      ],
+      [
+        "Explore the Tide Observatory",
+        "Follow milestones and choose small challenges in the City of Tides."
+      ],
+      [
+        "Connect under an alias",
+        "Join community conversations, ask for one-to-one support, or play a friendly battle."
+      ]
+    ],
+    "caption": "Tide Observatory preview",
+    "screen": "SoberBoss recovery milestones in a blue and gold underwater observatory.",
+    "support": "Get help with recovery settings, community features, or your account.",
+    "faq": [
+      [
+        "How do I change my recovery date?",
+        "Open Home and choose Recovery Settings to update your sobriety date and spending estimate."
+      ],
+      [
+        "How do I delete my account?",
+        "Open Home, choose Recovery Settings, then Delete Account. Follow the confirmation prompts."
+      ],
+      [
+        "Where can I report a concern?",
+        "Use the report or hide action in the relevant community screen. For follow-up, email support with the screen name and approximate time."
+      ]
+    ],
+    "privacyIntro": "How SoberBoss handles sobriety tracking, community features, and support.",
+    "privacy": [
+      [
+        "Recovery and account information",
+        "SoberBoss uses your sobriety date, spending estimate, streaks, and challenge progress to show your milestones. Sign in with Apple and Firebase Authentication provide an account identifier. Your chosen alias identifies you to other players."
+      ],
+      [
+        "Community activity",
+        "Messages, SOS interactions, battle moves and results, profile information, and quotes are processed to provide community features. Other participants can see the alias and content you post. Reports and hide preferences help moderate these spaces."
+      ],
+      [
+        "Service providers",
+        "Firebase Authentication, Cloud Firestore, and Cloud Functions support accounts, stored records, and community actions. The app includes Firebase Analytics, which may process app usage and device information depending on its configuration."
+      ],
+      [
+        "Account and data removal",
+        "Use Home, Recovery Settings, then Delete Account. The deletion workflow removes account data and can anonymize earlier shared content. Some safety records and content involving other participants may remain."
+      ]
+    ]
+  },
+  "resistboss": {
+    "name": "ResistBoss",
+    "category": "Personal habits",
+    "summary": "Set a private goal and track the urges you work through.",
+    "intro": "For adults working to reduce or quit pornography use, masturbation, or both. Set a goal for each habit, record a private check-in, and explore the Astral Ring between milestones.",
+    "features": [
+      [
+        "Choose your goals",
+        "Decide which habits to track. Each can have a quit goal or a weekly limit."
+      ],
+      [
+        "Make a private check-in",
+        "Record an urge, a moment you got through, or a setback to see patterns over time."
+      ],
+      [
+        "Explore the Astral Ring",
+        "Visit the Constellation Observatory for challenges, or choose a hero for a solo game."
+      ]
+    ],
+    "caption": "Constellation Observatory preview",
+    "screen": "The ResistBoss Constellation Observatory with challenge cards beneath a celestial canopy.",
+    "support": "Get help with your goals, journal, or account. You can describe a technical issue without sending journal entries.",
+    "faq": [
+      [
+        "Can I track two goals?",
+        "Yes. In Goal settings, choose one or both habits and a separate quit or reduction goal for each."
+      ],
+      [
+        "Who can see my check-ins?",
+        "Your private check-ins are kept separate from community posts. Content you choose to share in a community interaction is visible to its participants."
+      ],
+      [
+        "How do I ask about removing data?",
+        "Email support and tell us whether you used a device-only journal or an account. Leave out the contents of your journal."
+      ]
+    ],
+    "privacyIntro": "ResistBoss is for adults. Its private recovery journal and optional shared features handle different information.",
+    "privacy": [
+      [
+        "Private goals and check-ins",
+        "The journal records the behaviors you choose, your goals, dates, and check-ins such as urges, resisted urges, or setbacks. These entries are used to calculate progress and are separate from your public alias and community posts."
+      ],
+      [
+        "Device and account storage",
+        "In device-only mode, the journal is stored in protected app files on your iPhone. In an account-connected session, plans and check-ins are stored under your account in Cloud Firestore. Availability of online features depends on the build."
+      ],
+      [
+        "Shared features and providers",
+        "Account-connected features use Sign in with Apple, Firebase Authentication, Cloud Firestore, and Cloud Functions. They process account identifiers, aliases, and the messages, activity, or reports you submit. Other participants can see the alias and content you choose to share."
+      ],
+      [
+        "Removing data",
+        "Account deletion can remove or anonymize account-linked records, including shared activity. A device-only journal is removed from that device when you delete the app and its data. Contact support for help with either mode."
+      ]
+    ]
+  },
+  "carbboss": {
+    "name": "CarbBoss",
+    "category": "Nutrition & weight",
+    "summary": "Log your macros and weight, and see how they change over time.",
+    "intro": "Keep daily carbs, protein, fat, and weight together. Set your own targets, record entries, and use your history to see how your numbers change.",
+    "features": [
+      [
+        "Set daily targets",
+        "Choose macro budgets and an optional goal weight in Settings."
+      ],
+      [
+        "Track what you log",
+        "Daily totals show how your entries compare with your targets."
+      ],
+      [
+        "Look back over time",
+        "View recorded weight and macro trends, and correct an entry for an earlier date."
+      ]
+    ],
+    "caption": "CarbBoss trend chart with sample entries",
+    "screen": "CarbBoss daily macro totals and a weight trend chart showing sample data.",
+    "support": "Get help with macro targets, weight history, entries, or charts.",
+    "faq": [
+      [
+        "How do I change a target?",
+        "Open Settings to adjust your daily carbs, protein, fat, and optional weight goal."
+      ],
+      [
+        "Can I correct an earlier entry?",
+        "Open the history editor and choose the date to change. Clearing the weight field removes that date’s weight entry."
+      ],
+      [
+        "Can support recover my log?",
+        "Entries are stored on your iPhone. The support team has no account copy of your log to restore."
+      ]
+    ],
+    "privacyIntro": "CarbBoss stores your nutrition and weight log on your iPhone.",
+    "privacy": [
+      [
+        "The information you enter",
+        "CarbBoss stores dated carb, protein, fat, and weight entries along with your targets. It uses these values to display totals, charts, and progress toward your goals."
+      ],
+      [
+        "Where it is stored",
+        "The app uses local device storage and preferences. It does not require an account or send your nutrition and weight history to a Rhino Builds backend. Copies in device backups depend on your Apple backup settings."
+      ],
+      [
+        "Editing and removing entries",
+        "Use the history editor to correct daily records. Deleting the app and its data removes its local records from that device. Existing device backups are managed separately through Apple."
+      ]
+    ]
+  },
+  "live-alpharetta": {
+    "name": "Live Alpharetta",
+    "category": "Local discovery",
+    "summary": "Explore Alpharetta places, local updates, and business specials.",
+    "intro": "See what’s happening around Alpharetta. Browse places and time-limited posts, check in to a local spot, or share an update from an approved business.",
+    "features": [
+      [
+        "Browse the city",
+        "Visit Live for updates or open Places for a directory organized by category."
+      ],
+      [
+        "Check in",
+        "Choose a place to share a time-limited check-in. Activity reflects visits people report themselves."
+      ],
+      [
+        "Post a business update",
+        "Approved businesses can publish a special, event, or photo and set when it stops appearing."
+      ]
+    ],
+    "caption": "Places preview with a sample listing",
+    "screen": "The Live Alpharetta Places directory with category filters and a sample café listing.",
+    "support": "Get help with sign-in, business applications, listings, check-ins, or reporting a post.",
+    "faq": [
+      [
+        "Do I need an account to browse?",
+        "You can open Live and Places without signing in. Use Sign in with Apple for check-ins or business access."
+      ],
+      [
+        "How do I list my business?",
+        "Sign in, open your account, and choose Apply for business access. An administrator reviews the details before a listing becomes public."
+      ],
+      [
+        "How do I report a listing or request deletion?",
+        "Email support with the listing name or type of account request. Include only the details needed to identify the issue."
+      ]
+    ],
+    "privacyIntro": "This policy covers the Alpharetta Live iPhone app, listed here as Live Alpharetta.",
+    "privacy": [
+      [
+        "Browsing and signing in",
+        "Live and Places can be browsed without an account. When you sign in, Apple and Firebase Authentication process an account identifier and may provide a name and email. Account names and emails are kept in private records."
+      ],
+      [
+        "Check-ins and public activity",
+        "A check-in records the place you select and when you check in. These are self-reported visits. Public activity uses a separate identifier and contributes to activity counts for the place."
+      ],
+      [
+        "Business applications and posts",
+        "Applications include business and representative contact details for administrator review. Approved listing details, specials, events, and photos submitted for publication can be seen by other users. Private application contact details are kept separate from the listing."
+      ],
+      [
+        "Storage, expiry, and requests",
+        "Cloud Firestore stores profiles, applications, check-ins, posts, and submitted post photos. An expired check-in or post can disappear from view while its record remains in Firestore. Email support to request access, correction, or deletion."
+      ]
+    ]
+  }
+}
